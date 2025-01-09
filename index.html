@@ -82,12 +82,10 @@
         }
 
         .dropdown .dropbtn {
-            
-            text-shadow: 0px 0px 4px #ffffff;
-            font-size: 16px;
+            font-size: 17px;
             border: none;
             outline: none;
-            color: white;
+            color: #f2f2f2;
             padding: 14px 16px;
             background-color: inherit;
             font-family: inherit;
@@ -116,11 +114,20 @@
         }
 
         .dropdown-content a:hover {
-            background-color: #ddd;
+            color: #ff6893;
+            text-shadow: 0px 0px 10px #ff6893;
+            transition: 0.2s;
         }
 
         .dropdown:hover .dropdown-content {
             display: block;
+            
+        }
+
+        .dropdown:hover .dropbtn{
+            color: #ff6893;
+            text-shadow: 0px 0px 10px #ff6893;
+            transition: 0.2s;
         }
 
         /* END DROPDOWN */
@@ -131,10 +138,8 @@
     <!-- Nav bar -->
     <div class="navbar">
         <a href=#>Home</a>
-        <a href=#>Gallery</a> <!-- This will become a dropdown -->
-        <a href=#>Contact</a>
         <div class="dropdown">
-            <button class="dropbtn">Dropdown
+            <button class="dropbtn">Gallery
             </button>
             <div class="dropdown-content">
                 <a href="#">Link 1</a>
@@ -142,6 +147,8 @@
                 <a href="#">Link 3</a>
             </div>
         </div>
+        <a href=#>Contact</a>
+        
     </div>
     <div>
         <h1>Portfolio</h1>
