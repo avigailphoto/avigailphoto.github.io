@@ -96,7 +96,9 @@
 
         .dropdown-content {
             font-family: 'Trebuchet MS', sans-serif;
-            display: none;
+            opacity:0;
+            transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+            transform: translateY(-10px);
             position: absolute;
             background-color: #f9f9f9;
             border-radius: 15px;
@@ -122,7 +124,8 @@
         }
 
         .dropdown:hover .dropdown-content {
-            display: block;
+            opacity:1;
+            transform: translateY(0px);
             
         }
 
