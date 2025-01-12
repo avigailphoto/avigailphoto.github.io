@@ -153,11 +153,16 @@
         /* END DROPDOWN */
 
         /* Logo */
+        .logobox {
+            float: right;
+            pointer-events: none;
+        }
         .logo {
             margin-top: 6px;
             margin-right: 10px;
             width: 30px;
             float: right;
+            pointer-events: all;
         }
 
         .logo:hover {
@@ -176,15 +181,18 @@
 
         .text {
             opacity: 0;
-            transition: 0.2s;
             float: right;
+            margin-top: 5px;
             width: 100px;
-            
+            pointer-events: none;
+            transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+            transform: translatex(10px);
         }
 
-        .logo:hover .text {
+        .logobox:hover .text {
             opacity: 1;
-            transition: 0.2s;
+            pointer-events: auto;
+            transform: translateY(0px);
         }
     </style>
 </head>
@@ -205,10 +213,10 @@
             </div>
         </div>
         <a href="contact">Contact</a>
-        <div class="logo">
+        <div class="logobox">
             
-            <img src="assets/text.png" alt="logo" class="text">
             <img src="assets/camera.png" alt="logo" class="logo">
+            <img src="assets/text.png" alt="logo" class="text">
         </div>
     </div>
     <!-- END NAV -->
