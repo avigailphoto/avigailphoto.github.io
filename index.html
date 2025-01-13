@@ -155,8 +155,8 @@
         /* Logo */
         .logobox {
             margin: 6px;
+            width: 50px;
             float: right;
-            pointer-events: none;
             overflow: hidden;
         }
 
@@ -189,6 +189,15 @@
             pointer-events: none;
             transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
             transform: translatex(10px);
+        }
+
+        .logobox:hover {
+            width: 120px;
+        }
+
+        .logobox:not(:hover) {
+            width: 50px;
+            transition: .2s 1s;
         }
 
         .logobox:hover .text {
